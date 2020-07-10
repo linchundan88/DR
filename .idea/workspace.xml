@@ -1,0 +1,943 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f9176771-07c5-4f66-8ecd-7437cb946091" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/tf2$bbb1.coverage" NAME="bbb1 Coverage Results" MODIFIED="1592453870938" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DR_English/train" />
+    <SUITE FILE_PATH="coverage/tf2$aa1.coverage" NAME="aa1 Coverage Results" MODIFIED="1592474950314" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DR_English/train" />
+    <SUITE FILE_PATH="coverage/tf2$my_deep_shap_validation.coverage" NAME="my_deep_shap_validation Coverage Results" MODIFIED="1593570143827" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DR_English/validation/Heatmaps/deepshap" />
+    <SUITE FILE_PATH="coverage/tf2$my_helper_gradients.coverage" NAME="my_helper_gradients Coverage Results" MODIFIED="1592907990321" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LIBS/Neural_Networks/Heatmaps/IntegratedGradient" />
+    <SUITE FILE_PATH="coverage/tf2$aaaa.coverage" NAME="aaaa Coverage Results" MODIFIED="1592473703153" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DR_English/train" />
+    <SUITE FILE_PATH="coverage/tf2$my_cam_validation1.coverage" NAME="my_cam_validation1 Coverage Results" MODIFIED="1592812915084" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DR_English/validation/Heatmaps/CAM" />
+    <SUITE FILE_PATH="coverage/tf2$my_cam_validation.coverage" NAME="my_cam_validation Coverage Results" MODIFIED="1592877947846" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DR_English/validation/Heatmaps/CAM" />
+    <SUITE FILE_PATH="coverage/tf2$my_train_one_step1.coverage" NAME="my_train_one_step1 Coverage Results" MODIFIED="1592807957395" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DR_English/train" />
+    <SUITE FILE_PATH="coverage/tf2$aaa.coverage" NAME="aaa Coverage Results" MODIFIED="1590898087296" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/STAGE/train" />
+    <SUITE FILE_PATH="coverage/tf2$bb.coverage" NAME="bb Coverage Results" MODIFIED="1590798966695" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/STAGE/train" />
+    <SUITE FILE_PATH="coverage/tf2$ccc.coverage" NAME="ccc Coverage Results" MODIFIED="1592451795224" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DR_English/train" />
+    <SUITE FILE_PATH="coverage/tf2$my_compute_validation.coverage" NAME="my_compute_validation Coverage Results" MODIFIED="1592625960503" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DR_English/validation" />
+    <SUITE FILE_PATH="coverage/tf2$my_gen_ref.coverage" NAME="my_gen_ref Coverage Results" MODIFIED="1592894028130" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LIBS/Neural_Networks/Heatmaps/deepshap/gen_ref" />
+    <SUITE FILE_PATH="coverage/tf2$my_deep_shap_dir.coverage" NAME="my_deep_shap_dir Coverage Results" MODIFIED="1593572264968" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DR_English/validation/Heatmaps/deepshap" />
+    <SUITE FILE_PATH="coverage/tf2$cccc.coverage" NAME="cccc Coverage Results" MODIFIED="1590799363020" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/STAGE/train" />
+    <SUITE FILE_PATH="coverage/tf2$tf_explain.coverage" NAME="tf_explain Coverage Results" MODIFIED="1592557438269" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/tf2$my_aaa.coverage" NAME="my_aaa Coverage Results" MODIFIED="1592817211988" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DR_English/validation/Heatmaps/IntegratedGradient" />
+    <SUITE FILE_PATH="coverage/tf2$my_helper_grad_cam_plusplus.coverage" NAME="my_helper_grad_cam_plusplus Coverage Results" MODIFIED="1592811555763" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LIBS/Neural_Networks/Heatmaps/CAM" />
+    <SUITE FILE_PATH="coverage/tf2$my_test__1_.coverage" NAME="my_test (1) Coverage Results" MODIFIED="1593507642889" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DR_English/validation/Heatmaps/deepshap" />
+    <SUITE FILE_PATH="coverage/tf2$my_mnist.coverage" NAME="my_mnist Coverage Results" MODIFIED="1592199290439" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MNIST" />
+    <SUITE FILE_PATH="coverage/tf2$my_validation.coverage" NAME="my_validation Coverage Results" MODIFIED="1592964525132" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DR_English/validation/Heatmaps/IntegratedGradient" />
+    <SUITE FILE_PATH="coverage/tf2$my_helper_integrated_gradient.coverage" NAME="my_helper_integrated_gradient Coverage Results" MODIFIED="1592884312132" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LIBS/Neural_Networks/Heatmaps/IntegratedGradient" />
+    <SUITE FILE_PATH="coverage/tf2$my_train_multiclass_helper.coverage" NAME="my_train_multiclass_helper Coverage Results" MODIFIED="1592551676439" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LIBS/DLP" />
+    <SUITE FILE_PATH="coverage/tf2$my_train_one_step__1_.coverage" NAME="my_train_one_step (1) Coverage Results" MODIFIED="1592446290906" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DR_English/train" />
+    <SUITE FILE_PATH="coverage/tf2$bbb.coverage" NAME="bbb Coverage Results" MODIFIED="1592453287996" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DR_English/train" />
+    <SUITE FILE_PATH="coverage/tf2$bbb__1_.coverage" NAME="bbb (1) Coverage Results" MODIFIED="1590745983860" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/tf2$my_gen_csv.coverage" NAME="my_gen_csv Coverage Results" MODIFIED="1592553404867" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DR_English/data_process" />
+    <SUITE FILE_PATH="coverage/tf2$aa.coverage" NAME="aa Coverage Results" MODIFIED="1590975046015" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/STAGE/train" />
+    <SUITE FILE_PATH="coverage/tf2$aaa1.coverage" NAME="aaa1 Coverage Results" MODIFIED="1592451924981" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DR_English/train" />
+    <SUITE FILE_PATH="coverage/tf2$my_test.coverage" NAME="my_test Coverage Results" MODIFIED="1593500455833" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DR_English/validation/Heatmaps/deepshap" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-557043938">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="6" />
+          <entry key="project.open.time.0" value="4" />
+          <entry key="project.open.time.2" value="4" />
+          <entry key="project.opened" value="8" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="csv" value="21" />
+          <entry key="json" value="12" />
+          <entry key="npy" value="3" />
+          <entry key="py" value="760" />
+          <entry key="readme" value="2" />
+          <entry key="txt" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CSV" value="16" />
+          <entry key="JSON" value="12" />
+          <entry key="PLAIN_TEXT" value="12" />
+          <entry key="Python" value="760" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="dummy" value="374" />
+          <entry key="json" value="6" />
+          <entry key="py" value="12501" />
+          <entry key="txt" value="68" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JSON" value="6" />
+          <entry key="PLAIN_TEXT" value="442" />
+          <entry key="Python" value="12501" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/DR_English/train/config_file_realtime.json">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>model</find>
+      <find>sha</find>
+      <find>norm</find>
+      <find>region</find>
+      <find>os.make</find>
+      <find>get_integrated_gradients</find>
+      <find>50</find>
+      <find>integrated_gradients = my_gradient.__get_integrated_gradients(img_inp</find>
+      <find>R2</find>
+      <find>eager</find>
+      <find>recur</find>
+      <find>recurse</find>
+      <find>layer_name</find>
+      <find>REFERENCE_FILE</find>
+      <find>reference_file</find>
+      <find>shap_deep_explain</find>
+      <find>GIF_FPS</find>
+      <find>e_list</find>
+      <find>gif_fps</find>
+      <find>preprocess</find>
+      <find>image_shape</find>
+      <find>My_deepshap</find>
+      <find>DIR_DEST</find>
+      <find>my_deepshap</find>
+      <find>DIR_SAVE_TMP</find>
+      <find>deepshap</find>
+      <find>dir_save_results</find>
+      <find>save_dir</find>
+      <find>copy</find>
+      <find>os.makedirs</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>/media/ubuntu/data1/糖网项目/DR分级英国标准_20190119_无杂病/DR</replace>
+      <replace>/DR/</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$</dir>
+    </dirStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/LIBS/DataPreprocess/my_images_generator_seg.py" />
+        <option value="$PROJECT_DIR$/LIBS/Heatmaps/IntegratedGradient/IntegratedGradients.py" />
+        <option value="$PROJECT_DIR$/LIBS/Heatmaps/deepshap/gen_ref/my_gen_ref_rop.py" />
+        <option value="$PROJECT_DIR$/LIBS/Heatmaps/my_helper_heatmaps_CAM.py" />
+        <option value="$PROJECT_DIR$/LIBS/CNN_Models/Utils/my_utils.py" />
+        <option value="$PROJECT_DIR$/LIBS/CNN_Models/my_convert_model_input.py" />
+        <option value="$PROJECT_DIR$/LIBS/TSNE/my_tsne_helper.py" />
+        <option value="$PROJECT_DIR$/DR_English/validation/my_predict_dir.py" />
+        <option value="$PROJECT_DIR$/DR_English/validation/my_tsne1.py" />
+        <option value="$PROJECT_DIR$/DR_English/validation/my_tsne.py" />
+        <option value="$PROJECT_DIR$/ddd.py" />
+        <option value="$PROJECT_DIR$/tf_explain.py" />
+        <option value="$PROJECT_DIR$/DR_English/train/my_train_one_step.py" />
+        <option value="$PROJECT_DIR$/LIBS/DataValidation/my_multi_class.py" />
+        <option value="$PROJECT_DIR$/LIBS/DLP/my_train_multiclass_helper.py" />
+        <option value="$PROJECT_DIR$/LIBS/DLP/my_predict_helper.py" />
+        <option value="$PROJECT_DIR$/LIBS/Neural_Networks/TSNE/my_tsne_helper.py" />
+        <option value="$PROJECT_DIR$/LIBS/DataValidation/my_multi_labels.py" />
+        <option value="$PROJECT_DIR$/LIBS/ImgPreprocess/my_test_time_img_aug.py" />
+        <option value="$PROJECT_DIR$/LIBS/DataPreprocess/my_images_generator_2d.py" />
+        <option value="$PROJECT_DIR$/LIBS/ImgPreprocess/my_preprocess.py" />
+        <option value="$PROJECT_DIR$/LIBS/ImgPreprocess/my_image_helper.py" />
+        <option value="$PROJECT_DIR$/LIBS/Generator/my_images_generator_2d.py" />
+        <option value="$PROJECT_DIR$/DR_English/datafiles/DR_english/split_patid_test_v1.csv" />
+        <option value="$PROJECT_DIR$/DR_English/datafiles/DR_english/split_patid_train_v1.csv" />
+        <option value="$PROJECT_DIR$/DR_English/datafiles/DR_english/split_patid_v1.csv" />
+        <option value="$PROJECT_DIR$/DR_English/datafiles/DR_english/split_patid_valid_v1.csv" />
+        <option value="$PROJECT_DIR$/DR_English/data_process/my_preprocess.py" />
+        <option value="$PROJECT_DIR$/DR_English/data_process/my_gen_csv.py" />
+        <option value="$PROJECT_DIR$/DR_English/validation/my_compute_validation.py" />
+        <option value="$PROJECT_DIR$/LIBS/Neural_Networks/Heatmaps/my_helper_heatmaps_CAM.py" />
+        <option value="$PROJECT_DIR$/DR_English/validation/Heatmaps/CAM/my_cam_validation1.py" />
+        <option value="$PROJECT_DIR$/DR_English/validation/Heatmaps/IntegratedGradient/my_aaa.py" />
+        <option value="$PROJECT_DIR$/LIBS/Neural_Networks/Heatmaps/IntegratedGradient/my_test.py" />
+        <option value="$PROJECT_DIR$/LIBS/Neural_Networks/Heatmaps/IntegratedGradient/my_helper_integrated_gradient.py" />
+        <option value="$PROJECT_DIR$/LIBS/Neural_Networks/Heatmaps/IntegratedGradient/my_helper_gradient.py" />
+        <option value="$PROJECT_DIR$/LIBS/Neural_Networks/Heatmaps/CAM/my_helper_cam.py" />
+        <option value="$PROJECT_DIR$/LIBS/Neural_Networks/Heatmaps/CAM/my_helper_grad_cam_plusplus.py" />
+        <option value="$PROJECT_DIR$/LIBS/Neural_Networks/Heatmaps/deepshap/gen_ref/my_gen_ref_rop.py" />
+        <option value="$PROJECT_DIR$/LIBS/Neural_Networks/Heatmaps/deepshap/gen_ref/my_gen_ref.py" />
+        <option value="$PROJECT_DIR$/DR_English/validation/Heatmaps/IntegratedGradient/my_validation.py" />
+        <option value="$PROJECT_DIR$/DR_English/validation/Heatmaps/CAM/my_cam_validation.py" />
+        <option value="$PROJECT_DIR$/DR_English/validation/Heatmaps/CAM/my_cam_dir.py" />
+        <option value="$PROJECT_DIR$/LIBS/Neural_Networks/Heatmaps/IntegratedGradient/my_helper_gradients.py" />
+        <option value="$PROJECT_DIR$/LIBS/Neural_Networks/Heatmaps/CAM/my_helper_grad_cam.py" />
+        <option value="$PROJECT_DIR$/DR_English/validation/Heatmaps/deepshap/my_test_mnist.py" />
+        <option value="$PROJECT_DIR$/DR_English/validation/Heatmaps/deepshap/my_test.py" />
+        <option value="$PROJECT_DIR$/DR_English/validation/Heatmaps/deepshap/my_deep_shap_dir.py" />
+        <option value="$PROJECT_DIR$/DR_English/validation/Heatmaps/deepshap/my_deep_shap_validation.py" />
+        <option value="$PROJECT_DIR$/LIBS/Neural_Networks/Heatmaps/deepshap/my_helper_deepshap.py" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="75" />
+    <option name="y" value="34" />
+    <option name="width" value="959" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="tf2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tf2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tf2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tf2" type="462c0819:PsiDirectoryNode" />
+              <item name="DR_English" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tf2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tf2" type="462c0819:PsiDirectoryNode" />
+              <item name="DR_English" type="462c0819:PsiDirectoryNode" />
+              <item name="data_process" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tf2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tf2" type="462c0819:PsiDirectoryNode" />
+              <item name="DR_English" type="462c0819:PsiDirectoryNode" />
+              <item name="train" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tf2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tf2" type="462c0819:PsiDirectoryNode" />
+              <item name="MNIST" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/LIBS/Generator/my_images_generator_2d.py" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/LIBS/Generator" />
+      <recent name="$PROJECT_DIR$/LIBS/CNN_Models" />
+      <recent name="$PROJECT_DIR$/LIBS/CNN_Models/Utils" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/DR_English/validation/Heatmaps/deepshap" />
+      <recent name="$PROJECT_DIR$/DR_English/validation/Heatmaps/IntegratedGradient" />
+      <recent name="$PROJECT_DIR$/LIBS/Neural_Networks/Heatmaps/deepshap/gen_ref" />
+      <recent name="$PROJECT_DIR$/LIBS/Neural_Networks/Heatmaps/IntegratedGradient" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.my_deep_shap_dir">
+    <configuration name="my_compute_validation" type="PythonConfigurationType" factoryName="Python">
+      <module name="tf2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DR_English/validation" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DR_English/validation/my_compute_validation.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="my_deep_shap_dir" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="tf2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DR_English/validation/Heatmaps/deepshap" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DR_English/validation/Heatmaps/deepshap/my_deep_shap_dir.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="my_deep_shap_validation" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="tf2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DR_English/validation/Heatmaps/deepshap" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DR_English/validation/Heatmaps/deepshap/my_deep_shap_validation.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="my_test (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="tf2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DR_English/validation/Heatmaps/deepshap" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DR_English/validation/Heatmaps/deepshap/my_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="my_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="tf2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DR_English/validation/Heatmaps/deepshap" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DR_English/validation/Heatmaps/deepshap/my_test_mnist.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="my_validation" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="tf2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DR_English/validation/Heatmaps/IntegratedGradient" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DR_English/validation/Heatmaps/IntegratedGradient/my_validation.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.my_compute_validation" />
+      <item itemvalue="Python.my_validation" />
+      <item itemvalue="Python.my_deep_shap_dir" />
+      <item itemvalue="Python.my_test" />
+      <item itemvalue="Python.my_test (1)" />
+      <item itemvalue="Python.my_deep_shap_validation" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.my_deep_shap_dir" />
+        <item itemvalue="Python.my_deep_shap_validation" />
+        <item itemvalue="Python.my_test (1)" />
+        <item itemvalue="Python.my_test" />
+        <item itemvalue="Python.my_validation" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f9176771-07c5-4f66-8ecd-7437cb946091" name="Default Changelist" comment="" />
+      <created>1590715326005</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1590715326005</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="65" y="-4" width="1215" height="1028" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27117193" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" auto_hide="true" id="Run" order="0" weight="0.29933482" />
+      <window_info anchor="bottom" auto_hide="true" id="Debug" order="1" weight="0.23170732" />
+      <window_info anchor="bottom" id="Docker" order="2" weight="0.3292683" />
+      <window_info anchor="bottom" id="Database Changes" order="3" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="4" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Python Console" order="5" weight="0.3292683" />
+      <window_info anchor="bottom" id="Event Log" order="6" side_tool="true" weight="0.3292683" />
+      <window_info anchor="bottom" id="Message" order="7" />
+      <window_info anchor="bottom" id="Find" order="8" weight="0.3292683" />
+      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="11" />
+      <window_info anchor="bottom" id="Terminal" order="12" weight="0.32972136" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Remote Host" order="3" />
+      <window_info anchor="right" id="SciView" order="4" weight="0.32934132" />
+      <window_info anchor="right" id="Database" order="5" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.csv" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/LIBS/DataPreprocess/my_data.py</url>
+          <line>99</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/DR_English/data_process/my_gen_csv.py</url>
+          <line>31</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/LIBS/DataPreprocess/my_data.py</url>
+          <line>177</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$USER_HOME$/anaconda3/envs/tensorflow2.2/lib/python3.6/site-packages/tensorflow/python/keras/engine/data_adapter.py</url>
+          <line>1247</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/LIBS/DLP/my_predict_helper.py</url>
+          <line>108</line>
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/LIBS/DataValidation/my_multi_labels.py</url>
+          <line>8</line>
+          <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/LIBS/Neural_Networks/Heatmaps/CAM/my_helper_grad_cam.py</url>
+          <line>97</line>
+          <option name="timeStamp" value="82" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/LIBS/Neural_Networks/Heatmaps/deepshap/gen_ref/my_gen_ref.py</url>
+          <line>30</line>
+          <option name="timeStamp" value="110" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/LIBS/Neural_Networks/Heatmaps/deepshap/gen_ref/my_gen_ref.py</url>
+          <line>23</line>
+          <option name="timeStamp" value="112" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$USER_HOME$/anaconda3/envs/tensorflow2.1/lib/python3.6/site-packages/shap/explainers/deep/__init__.py</url>
+          <line>118</line>
+          <option name="timeStamp" value="150" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/DR_English/validation/Heatmaps/deepshap/my_deep_shap_dir.py</url>
+          <line>70</line>
+          <option name="timeStamp" value="154" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/DR_English/validation/Heatmaps/deepshap/my_deep_shap_dir.py</url>
+          <line>75</line>
+          <option name="timeStamp" value="156" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/DR_English/validation/Heatmaps/deepshap/my_deep_shap_dir.py</url>
+          <line>55</line>
+          <option name="timeStamp" value="157" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/DR_English/validation/Heatmaps/deepshap/my_deep_shap_dir.py</url>
+          <line>58</line>
+          <option name="timeStamp" value="159" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>dir_preprocess in image_file</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>dir_preprocess in img_file</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>image_file</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>list_images[0]</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>list_shap_values</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>np.abs(diffs).max()</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>diffs</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>e_list</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>img_input</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/DR_English/datafiles/DR_english/split_patid_valid_v1.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="65823">
+          <caret line="3879" selection-end-line="3879" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DR_English/datafiles/DR_english/split_patid_test_v1.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="62">
+          <caret line="5774" selection-start-line="5774" selection-end-line="5774" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DR_English/data_process/my_gen_csv.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" lean-forward="true" selection-start-line="9" selection-end-line="11" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DR_English/validation/my_tsne.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="56" lean-forward="true" selection-start-line="20" selection-start-column="56" selection-end-line="20" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DR_English/validation/my_predict_dir.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="30" column="17" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/tensorflow2.2/lib/python3.6/site-packages/h5py/_hl/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/tensorflow2.2/lib/python3.6/site-packages/numpy/core/_asarray.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="91" column="14" lean-forward="true" selection-start-line="91" selection-start-column="14" selection-end-line="91" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LIBS/Neural_Networks/Heatmaps/my_helper_heatmaps_CAM.py" />
+    <entry file="file://$USER_HOME$/anaconda3/envs/tensorflow2.2/lib/python3.6/site-packages/tensorflow/python/keras/applications/imagenet_utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="997">
+          <caret line="157" column="4" selection-start-line="157" selection-start-column="4" selection-end-line="157" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/tensorflow2.2/lib/python3.6/site-packages/tensorflow/python/keras/applications/xception.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="325" column="32" lean-forward="true" selection-start-line="325" selection-start-column="24" selection-end-line="325" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/tensorflow2.2/lib/python3.6/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="310" selection-start-line="310" selection-end-line="310" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/tensorflow2.2/lib/python3.6/site-packages/tensorflow/python/ops/nn_ops.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="1041" selection-start-line="1041" selection-end-line="1041" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LIBS/DLP/my_train_multiclass_helper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="61" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LIBS/Neural_Networks/Heatmaps/IntegratedGradient/my_helper_integrated_gradient.py" />
+    <entry file="file://$USER_HOME$/anaconda3/envs/tensorflow2.2/lib/python3.6/site-packages/imageio/core/request.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="256" selection-start-line="256" selection-end-line="256" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LIBS/Neural_Networks/Heatmaps/deepshap/gen_ref/split_patid_v1.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LIBS/Generator/my_images_generator_2d.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="137" selection-start-line="137" selection-end-line="137" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LIBS/Neural_Networks/Heatmaps/deepshap/gen_ref/my_gen_ref.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LIBS/Neural_Networks/Heatmaps/IntegratedGradient/my_test.py" />
+    <entry file="file://$PROJECT_DIR$/LIBS/Neural_Networks/Heatmaps/IntegratedGradient/IntegratedGradients(depercated).py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DR_English/validation/Heatmaps/IntegratedGradient/my_aaa.py" />
+    <entry file="file://$PROJECT_DIR$/DR_English/validation/my_compute_validation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DR_English/validation/Heatmaps/deepshap/ref_rop.npy" />
+    <entry file="file://$PROJECT_DIR$/DR_English/validation/Heatmaps/IntegratedGradient/my_validation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="22" selection-start-line="22" selection-end-line="26" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/tensorflow2.2/lib/python3.6/site-packages/tensorflow/python/eager/context.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="490">
+          <caret line="530" selection-start-line="530" selection-end-line="530" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DR_English/validation/Heatmaps/deepshap/ref_dr.npy">
+      <provider selected="true" editor-type-id="LargeFileEditor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DR_English/datafiles/DR_english/split_patid_train_v1.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="513">
+          <caret line="28986" column="138" lean-forward="true" selection-start-line="28986" selection-end-line="28986" selection-end-column="138" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LIBS/Neural_Networks/Heatmaps/CAM/my_helper_grad_cam_plusplus.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="730">
+          <caret line="75" column="68" lean-forward="true" selection-start-line="75" selection-start-column="68" selection-end-line="75" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DR_English/validation/Heatmaps/CAM/my_cam_dir.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="53" column="7" selection-start-line="53" selection-start-column="7" selection-end-line="53" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DR_English/validation/Heatmaps/CAM/my_cam_validation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="41" column="52" selection-start-line="41" selection-start-column="45" selection-end-line="41" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/tensorflow2.2/lib/python3.6/site-packages/tensorflow/python/client/session.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="703" selection-start-line="703" selection-end-line="703" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/tensorflow2.2/lib/python3.6/site-packages/tensorflow/python/framework/func_graph.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="979" lean-forward="true" selection-start-line="979" selection-end-line="979" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/tensorflow2.2/lib/python3.6/site-packages/shap/explainers/deep/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1309">
+          <caret line="79" column="39" selection-start-line="79" selection-start-column="29" selection-end-line="79" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/tensorflow2.1/lib/python3.6/site-packages/shap/explainers/explainer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/tensorflow2.1/lib/python3.6/site-packages/shap/explainers/deep/deep_pytorch.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="139" column="36" selection-start-line="139" selection-start-column="36" selection-end-line="139" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/tensorflow2.1/lib/python3.6/site-packages/shap/explainers/deep/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="455">
+          <caret line="118" selection-start-line="118" selection-end-line="118" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/tensorflow2.1/lib/python3.6/site-packages/tensorflow_core/python/framework/func_graph.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1930">
+          <caret line="906" selection-start-line="906" selection-end-line="906" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LIBS/Neural_Networks/Heatmaps/IntegratedGradient/my_helper_gradients.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LIBS/Neural_Networks/Heatmaps/CAM/my_helper_grad_cam.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LIBS/Neural_Networks/Heatmaps/CAM/my_helper_cam.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="22" column="90" lean-forward="true" selection-start-line="22" selection-start-column="90" selection-end-line="22" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DR_English/data_process/my_preprocess.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="82" lean-forward="true" selection-start-line="4" selection-end-line="4" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/tensorflow2.2/lib/python3.6/site-packages/shap/explainers/deep/deep_tf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="251" column="91" selection-start-line="251" selection-start-column="75" selection-end-line="251" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DR_English/validation/Heatmaps/deepshap/my_test_mnist.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="81" column="8" lean-forward="true" selection-start-line="81" selection-end-line="81" selection-end-column="11" />
+          <folding>
+            <element signature="e#1286#1299#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DR_English/validation/Heatmaps/deepshap/my_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="683">
+          <caret line="45" column="83" selection-start-line="45" selection-start-column="61" selection-end-line="45" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LIBS/Neural_Networks/Heatmaps/deepshap/my_helper_deepshap.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1395">
+          <caret line="84" column="37" selection-start-line="84" selection-start-column="18" selection-end-line="84" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DR_English/validation/Heatmaps/deepshap/my_deep_shap_validation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="74" column="60" selection-start-line="74" selection-start-column="56" selection-end-line="74" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DR_English/validation/Heatmaps/deepshap/my_deep_shap_dir.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="479">
+          <caret line="71" column="30" selection-start-line="71" selection-start-column="30" selection-end-line="71" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MNIST/my_mnist.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-561" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DR_English/train/my_train_one_step.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="3" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DR_English/train/config_file_realtime.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+  </component>
+</project>
