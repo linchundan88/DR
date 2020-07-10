@@ -10,9 +10,9 @@ DO_PREPROCESS = False
 GEN_CSV = True
 COMPUTE_DIR_FILES = True
 
-dir_original = '/media/ubuntu/data1/ROP项目/人机比赛用图_20200317/original'
-dir_preprocess = '/media/ubuntu/data1/ROP项目/人机比赛用图_20200317/preprocess384/'
-dir_dest = '/media/ubuntu/data1/ROP项目/人机比赛用图_20200317/results_2020_5_20/Stage'
+dir_original = '/media/ubuntu/data1/screen/original'
+dir_preprocess = '/media/ubuntu/data1/screen/preprocess384/'
+dir_dest = '/media/ubuntu/data1/ROP项目/screen/results'
 pkl_prob = os.path.join(dir_dest, 'probs.pkl')
 
 from LIBS.ImgPreprocess import my_preprocess_dir
@@ -21,14 +21,14 @@ if DO_PREPROCESS:
             image_size=384, is_rop=False, add_black_pixel_ratio=0.07)
 
 dicts_models = []
-model_dir = '/home/ubuntu/dlp/deploy_models/ROP/STAGE/2020_5_19'
-dict_model1 = {'model_file': os.path.join(model_dir, 'InceptionResnetV2-008-0.985.hdf5'),
+model_dir = '/tmp5/models_2020_6_19/DR_english/v1'
+dict_model1 = {'model_file': os.path.join(model_dir, 'InceptionV3-004-0.982.hdf5'),
                'input_shape': (299, 299, 3), 'model_weight': 1}
 dicts_models.append(dict_model1)
-dict_model1 = {'model_file': os.path.join(model_dir, 'InceptionV3-008-0.978.hdf5'),
+dict_model1 = {'model_file': os.path.join(model_dir, 'InceptionResnetV2-004-0.984.hdf5'),
                'input_shape': (299, 299, 3), 'model_weight': 1}
 dicts_models.append(dict_model1)
-dict_model1 = {'model_file': os.path.join(model_dir, 'Xception-009-0.981.hdf5'),
+dict_model1 = {'model_file': os.path.join(model_dir, 'Xception-004-0.984.hdf5'),
                'input_shape': (299, 299, 3), 'model_weight': 1}
 dicts_models.append(dict_model1)
 

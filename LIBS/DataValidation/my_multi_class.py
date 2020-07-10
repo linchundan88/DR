@@ -3,12 +3,9 @@
 '''
 
 import os
-
 import numpy as np
 from sklearn.metrics import confusion_matrix as sk_confusion_matrix
-
 from LIBS.DataPreprocess import my_data
-import pandas as pd
 import shutil
 import heapq
 
