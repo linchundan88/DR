@@ -11,6 +11,7 @@ import numpy as np
 import math
 import cv2
 from tensorflow import keras
+from LIBS.ImgPreprocess.my_image_norm import input_norm_reverse
 
 class My_deepshap():
 
@@ -42,7 +43,7 @@ class My_deepshap():
 
     def shap_deep_explainer(self, model_no,
                           num_reference, img_input, ranked_outputs=1,
-                          norm_reverse=False,
+                          norm_reverse=True,
                           blend_original_image=False, gif_fps=1,
                           base_dir_save='/tmp/DeepExplain',
                           check_additivity=False):
@@ -89,7 +90,6 @@ class My_deepshap():
         pred_class_num = len(shap_values_results[0])
 
         if blend_original_image:
-            from LIBS.ImgPreprocess.my_image_norm import input_norm_reverse
             if norm_reverse:
                 img_original = np.uint8(input_norm_reverse(img_input[0]))
             else:

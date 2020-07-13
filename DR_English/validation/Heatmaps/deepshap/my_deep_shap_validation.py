@@ -69,10 +69,11 @@ for model_no in range(len(dicts_models)):
 
             if (class_predict == 1 and image_label == 1) or\
                     (class_predict == 1 and image_label == 0):
-                list_classes, list_images = my_deepshap.shap_deep_explain(
+                list_classes, list_images = my_deepshap.shap_deep_explainer(
                     model_no=model_no, num_reference=num_reference,
                     img_input=img_input, ranked_outputs=1,
-                    blend_original_image=blend_image, base_dir_save=dir_save_tmp)
+                    blend_original_image=blend_image, norm_reverse=True,
+                    base_dir_save=dir_save_tmp)
 
                 if class_predict == 1 and image_label == 1:
                     file_dest = image_file.replace(dir_preprocess, os.path.join(save_dir, str(model_no), '1_1/'))

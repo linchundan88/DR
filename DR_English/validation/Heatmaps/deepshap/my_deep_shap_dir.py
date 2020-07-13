@@ -65,10 +65,11 @@ for _, row in df.iterrows():
     class_predict = np.argmax(prob)
 
     if class_predict == 1:
-        list_classes, list_images = my_deepshap.shap_deep_explain(
+        list_classes, list_images = my_deepshap.shap_deep_explainer(
             model_no=model_no, num_reference=num_reference,
             img_input=img_input, ranked_outputs=1,
-            blend_original_image=blend_original_image, base_dir_save=dir_save_tmp)
+            blend_original_image=blend_original_image, norm_reverse=True,
+            base_dir_save=dir_save_tmp)
 
         file_dest = image_file.replace(dir_preprocess, os.path.join(dir_dest, 'deepshap'))
         assert dir_preprocess in file_dest, 'heatmap file overwrite preprocess image file'

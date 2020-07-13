@@ -43,7 +43,7 @@ model_dir = my_config.dir_deploy_models
 dicts_models = []
 #xception batch_size:6, inception-v3 batch_size:24, InceptionResnetV2 batch_size:12
 dict1 = {'model_file': os.path.join(model_dir, 'DR_english_2classes/InceptionResnetV2-006-0.980.hdf5'),
-         'input_shape': (299, 299, 3), 'batch_size': 12}
+         'input_shape': (299, 299, 3), 'batch_size': 8}
 dicts_models.append(dict1)
 dict1 = {'model_file': os.path.join(model_dir, 'DR_english_2classes/Xception-006-0.980.hdf5'),
          'input_shape': (299, 299, 3), 'batch_size': 6}
@@ -82,10 +82,11 @@ if my_config.debug_mode:
 
         print('model1')
         #first time take longer
-        for i in range(2):
+        for i in range(1):
             print(time.time())
             list_classes, list_images = server_shap_deep_explainer(model_no=0,
-                  img_source=img_file_preprocessed, ranked_outputs=1)
+                img_source=img_file_preprocessed, ranked_outputs=1,
+                blend_original_image=True, norm_reverse=True)
             print(time.time())
             print(list_images)
 
