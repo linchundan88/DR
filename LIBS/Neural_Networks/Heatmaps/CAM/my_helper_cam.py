@@ -1,15 +1,11 @@
 
 import os
-import sys
-sys.path.append(os.path.abspath('./'))
-sys.path.append(os.path.abspath('../'))
 import numpy as np
 from tensorflow.keras.layers import *
 from tensorflow.keras.models import Model
 from tensorflow import keras
 import cv2
 import uuid
-
 
 class My_cam():
     def __init__(self, model):
@@ -20,24 +16,24 @@ class My_cam():
         else:
             self.model = model
 
-        self.model_last_conv, self.all_amp_layer_weights = self.__modify_model(self.model)
+        self.model_last_conv, self.all_amp_layer_weights = self.__modify_model()
 
-    def __modify_model(model, last_layer=-1):
+    def __modify_model(self, last_layer=-1):
         # get the last conv layer before global average pooling
-        for i in range(len(model.layers) - 1, -1, -1):
-            if isinstance(model.layers[i], Conv2D) or \
-                    isinstance(model.layers[i], Activation) or \
-                    isinstance(model.layers[i], SeparableConv2D) or \
-                    isinstance(model.layers[i], Concatenate):  # inception v3 Concatenate
+        for i in range(len(self.model.layers) - 1, -1, -1):
+            if isinstance(self.model.layers[i], Conv2D) or \
+                    isinstance(self.model.layers[i], Activation) or \
+                    isinstance(self.model.layers[i], SeparableConv2D) or \
+                    isinstance(self.model.layers[i], Concatenate):  # inception v3 Concatenate
                 last_conv_layer = i
                 break
 
         # get AMP layer weights
-        last_layer_weights = model.layers[last_layer].get_weights()[0]
+        last_layer_weights = self.model.layers[last_layer].get_weights()[0]
 
         # extract wanted output
-        output_model = Model(inputs=model.input,
-                             outputs=(model.layers[last_conv_layer].output))
+        output_model = Model(inputs=self.model.input,
+                             outputs=(self.model.layers[last_conv_layer].output))
 
         return output_model, last_layer_weights
 
@@ -75,7 +71,7 @@ class My_cam():
             image_original = image_original.astype(np.uint8)
 
             filename_original = os.path.join(base_dir_save, str_uuid, 'original.jpg')
-            cv2.imwrite(image_original, filename_original)
+            cv2.imwrite(filename_original, image_original)
 
             filename_CAM = os.path.join(base_dir_save, str_uuid, 'CAM{}.jpg'.format(pred_class))
             cv2.imwrite(filename_CAM, cam)
@@ -107,7 +103,6 @@ class My_cam():
 
             filename_CAM = os.path.join(base_dir_save, str_uuid, 'CAM{}.jpg'.format(pred_class))
             cv2.imwrite(filename_CAM, cam)
-
 
         return filename_CAM
 

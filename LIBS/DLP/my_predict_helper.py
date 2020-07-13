@@ -20,7 +20,7 @@ def do_predict_single(model1, img1, img_size=299, preproess=False, cuda_visible_
 
     # /= 255. etc.
     img_tensor = LIBS.Generator.my_images_generator_2d.my_gen_img_tensor(img1,
-                                                                         image_shape=(img_size, img_size, 3))
+                image_shape=(img_size, img_size, 3))
 
     prob1 = model1.predict_on_batch(img_tensor)
     prob1 = np.mean(prob1, axis=0)  # batch mean

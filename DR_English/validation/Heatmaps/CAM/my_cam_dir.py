@@ -2,16 +2,13 @@
 import os
 os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
 os.environ["CUDA_VISIBLE_DEVICES"] = "1"
-import sys
-sys.path.append(os.path.abspath('./'))
-sys.path.append(os.path.abspath('../'))
 import numpy as np
 import shutil
 import pandas as pd
 from LIBS.ImgPreprocess import my_preprocess
+from LIBS.Generator import my_images_generator_2d
 from LIBS.Neural_Networks.Heatmaps.CAM import my_helper_cam, my_helper_grad_cam, my_helper_grad_cam_plusplus
 from tensorflow import keras
-from LIBS.Generator import my_images_generator_2d
 
 
 DO_PREPROCESS = False
@@ -79,15 +76,14 @@ for heatmap_type in ['CAM', 'grad_cam', 'gradcam_plus']:
         class_predict = np.argmax(probs)
 
         if class_predict == 1:
-            if heatmap_type == 'grad_cam':
-                if heatmap_type == 'CAM':
-                    filename_heatmap = my_cam.gen_heatmap(img_input=img_input, pred_class=class_predict,
+            if heatmap_type == 'CAM':
+                filename_heatmap = my_cam.gen_heatmap(img_input=img_input, pred_class=class_predict,
                                                           cam_relu=True, blend_original_image=True)
-                if heatmap_type == 'grad_cam':
-                    filename_heatmap = my_grad_cam.gen_heatmap(img_input=img_input, pred_class=class_predict,
+            if heatmap_type == 'grad_cam':
+                filename_heatmap = my_grad_cam.gen_heatmap(img_input=img_input, pred_class=class_predict,
                                                             blend_original_image=True)
-                if heatmap_type == 'gradcam_plus':
-                    filename_heatmap = my_grad_cam_plusplus.gen_heatmap(img_input=img_input, pred_class=class_predict,
+            if heatmap_type == 'gradcam_plus':
+                filename_heatmap = my_grad_cam_plusplus.gen_heatmap(img_input=img_input, pred_class=class_predict,
                                                             blend_original_image=True)
 
             # jpeg, gif, file extension may be fifferent.

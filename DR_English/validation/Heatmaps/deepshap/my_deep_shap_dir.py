@@ -6,9 +6,6 @@ tf.disable_v2_behavior()
 import os
 os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
 os.environ["CUDA_VISIBLE_DEVICES"] = "2"
-import sys
-sys.path.append(os.path.abspath('./'))
-sys.path.append(os.path.abspath('../'))
 import LIBS.Generator.my_images_generator_2d
 import numpy as np
 import LIBS.ImgPreprocess.my_image_helper
@@ -17,7 +14,7 @@ import pandas as pd
 from LIBS.ImgPreprocess import my_preprocess
 import shutil
 
-reference_file = 'ref_dr.npy'
+reference_file = 'reference.npy'
 num_reference = 24
 dir_save_tmp = '/tmp/deepshap'
 

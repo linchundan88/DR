@@ -31,7 +31,7 @@ for i in range(SAMPLES_NUM):
         x_test = np.append(x_test, img_black, axis=0)
 
 x_test = np.asarray(x_test, dtype=np.float16)
-save_filename = 'ref_dr.npy'
+save_filename = 'reference.npy'
 np.save(save_filename, x_test)
 
 # background = np.load(save_filename)

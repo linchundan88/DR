@@ -1,9 +1,6 @@
 #based on https://github.com/totti0223/gradcamplusplus/blob/master/gradcamutils.py
 
 import os
-import sys
-sys.path.append(os.path.abspath('./'))
-sys.path.append(os.path.abspath('../'))
 import numpy as np
 from tensorflow import keras
 import tensorflow.keras.backend as K
@@ -83,7 +80,7 @@ class My_grad_cam_plusplus():
             image_original = image_original.astype(np.uint8)
 
             filename_original = os.path.join(base_dir_save, str_uuid, 'original.jpg')
-            cv2.imwrite(image_original, filename_original)
+            cv2.imwrite(filename_original, image_original)
 
             filename_CAM = os.path.join(base_dir_save, str_uuid, 'GradCAM_PlusPlus{}.jpg'.format(pred_class))
             cv2.imwrite(filename_CAM, cam)

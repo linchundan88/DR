@@ -3,9 +3,6 @@
 import os
 os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
 os.environ["CUDA_VISIBLE_DEVICES"] = ""
-import sys
-sys.path.append(os.path.abspath('./'))
-sys.path.append(os.path.abspath('../'))
 import numpy as np
 from tensorflow import keras
 import tensorflow.keras.backend as K
@@ -16,7 +13,6 @@ from tensorflow.python.framework.ops import disable_eager_execution
 
 # in the future, I will replace K.gradient function with tf.GradientTape, g.gradnent.
 disable_eager_execution()
-
 
 class My_grad_cam():
     def __init__(self, model):
@@ -69,8 +65,7 @@ class My_grad_cam():
             image_original = image_original.astype(np.uint8)
 
             filename_original = os.path.join(base_dir_save, str_uuid, 'original.jpg')
-            cv2.imwrite(image_original, filename_original)
-
+            cv2.imwrite(filename_original, image_original)
             filename_CAM = os.path.join(base_dir_save, str_uuid, 'Grad_CAM{}.jpg'.format(pred_class))
             cv2.imwrite(filename_CAM, jetcam)
 

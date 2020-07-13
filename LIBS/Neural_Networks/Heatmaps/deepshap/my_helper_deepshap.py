@@ -40,7 +40,7 @@ class My_deepshap():
             self.list_e.append(list_split_e)
 
 
-    def shap_deep_explain(self, model_no,
+    def shap_deep_explainer(self, model_no,
                           num_reference, img_input, ranked_outputs=1,
                           norm_reverse=False,
                           blend_original_image=False, gif_fps=1,
