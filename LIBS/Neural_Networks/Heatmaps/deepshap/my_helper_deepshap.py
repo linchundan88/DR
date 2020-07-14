@@ -135,6 +135,8 @@ class My_deepshap():
                 plt.close()
 
                 img_heatmap = cv2.imread(list_images[i])
+                (tmp_height, tmp_width) = img_original.shape[:-1]
+                img_heatmap = cv2.resize(img_heatmap, (tmp_width, tmp_height))
                 img_heatmap_file = os.path.join(os.path.dirname(list_images[i]), 'deepshap_{0}.jpg'.format(i))
                 cv2.imwrite(img_heatmap_file, img_heatmap)
 
