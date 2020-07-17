@@ -9,6 +9,7 @@ This project contains the first two parts of the platform.
 And the third part(web application) can be found at the project "DR_Web".
 
 3.Code structure
+Please see requirements.txt for dependency libraries.
 The LIBS sub-directory includes shared libraries.
 The RPC sub-directory provide RPC services, which can be called by the web application
 The run_rpc.sh is the script to start RPC services. 
