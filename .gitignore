@@ -1,3 +1,6 @@
 /LIBS/DB/db_config.json
+*.csv
 .idea/*
 .idea/
+*.sqlite
+LaserSpot/

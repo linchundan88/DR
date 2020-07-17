@@ -7,6 +7,8 @@ os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
 os.environ["CUDA_VISIBLE_DEVICES"] = ""
 from xmlrpc.server import SimpleXMLRPCServer
 import sys
+sys.path.append(os.path.abspath('./'))
+sys.path.append(os.path.abspath('../'))
 import shutil
 import uuid
 import my_config
@@ -51,8 +53,8 @@ def server_cam(model_no, image_file_preprocessed, pred, cam_relu=True,
 #region command parameters: class type no and port no
 if len(sys.argv) != 4:  # sys.argv[0]  exe file itself
     reference_class = '1'  # DR english 2 classes
-    port = 30100
-    heatmap_type = 'gradcam_plus' #CAM grad_cam, gradcam_plus
+    port = 5100
+    heatmap_type = 'CAM' #CAM grad_cam, gradcam_plus
 else:
     reference_class = str(sys.argv[1])
     port = int(sys.argv[2])
@@ -62,11 +64,30 @@ else:
 dicts_models = []
 if reference_class == '1':
     dict1 = {'model_file': os.path.join(DIR_MODELS, 'DR_english_2classes/InceptionResnetV2-006-0.980.hdf5'),
-              'input_shape': (299, 299, 3), 'model_weight': 1}
+              'input_shape': (299, 299, 3)}
     dicts_models.append(dict1)
     dict1 = {'model_file': os.path.join(DIR_MODELS, 'DR_english_2classes/Xception-006-0.980.hdf5'),
-              'input_shape': (299, 299, 3), 'model_weight': 1}
+              'input_shape': (299, 299, 3)}
     dicts_models.append(dict1)
+
+#Gradable
+if reference_class == '11':
+    dict1 = {'model_file': os.path.join(DIR_MODELS, 'Gradable/MobileNetV2-005-0.946.hdf5'),
+              'input_shape': (224, 224, 3)}
+    dicts_models.append(dict1)
+    dict1 = {'model_file': os.path.join(DIR_MODELS, 'Gradable/NasnetMobile-006-0.945.hdf5'),
+             'input_shape': (224, 224, 3)}
+    dicts_models.append(dict1)
+
+#left right eye
+if reference_class == '12':
+    dict1 = {'model_file': os.path.join(DIR_MODELS, 'LeftRight/MobileNetV2-005-0.997.hdf5'),
+              'input_shape': (224, 224, 3)}
+    dicts_models.append(dict1)
+    dict1 = {'model_file': os.path.join(DIR_MODELS, 'LeftRight/NasnetMobile-007-0.991.hdf5'),
+              'input_shape': (224, 224, 3)}
+    dicts_models.append(dict1)
+
 
 for dict1 in dicts_models:
     print('prepare to load model:' + dict1['model_file'])

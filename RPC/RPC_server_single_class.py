@@ -39,7 +39,6 @@ def predict_softmax(img_preprocessed):
 
     prob_total = np.average(prob_np, axis=0, weights=list_weights)
     pred_total = prob_total.argmax(axis=-1)
-
     prob_total = prob_total.tolist()  #RPC Service can not pass numpy variable
     pred_total = int(pred_total)     # 'numpy.int64'  XMLRPC
 
@@ -62,37 +61,34 @@ else:
     port = 5001
 
 #region define models
-model_dir = my_config.dir_deploy_models
+DIR_MODELS = my_config.dir_deploy_models
 dicts_models = []
-
-#left right eye
-if reference_class == '-4':
-    dict1 = {'model_file': model_dir + 'LeftRight/MobileNetV2-005-0.997.hdf5',
-              'input_shape': (224, 224, 3), 'model_weight': 1}
-    dicts_models.append(dict1)
-
-    # dict1 = {'model_file': DIR_MODELS + 'LeftRight/NasnetMobile-007-0.991.hdf5',
-    #          'model_weight': 1, 'input_shape': (224, 224, 3)}
-    # models.append(dict1)
-
-#gradable
-if reference_class == '-3':
-    dict1 = {'model_file': model_dir + 'Gradable/MobileNetV2-005-0.946.hdf5',
-              'input_shape': (224, 224, 3), 'model_weight': 1}
-    dicts_models.append(dict1)
-
-    # dict1 = {'model_file': DIR_MODELS + 'Gradable/NasnetMobile-006-0.945.hdf5',
-    #          'input_shape': (224, 224, 3), 'model_weight': 1}
-    # models.append(dict1)
 
 #DR
 if reference_class == '1':
-    dict1 = {'model_file': os.path.join(model_dir, 'DR_english_2classes/InceptionResnetV2-006-0.980.hdf5'),
+    dict1 = {'model_file': os.path.join(DIR_MODELS, 'DR_english_2classes/InceptionResnetV2-006-0.980.hdf5'),
+              'input_shape': (299, 299, 3), 'model_weight': 1}
+    dicts_models.append(dict1)
+    dict1 = {'model_file': os.path.join(DIR_MODELS, 'DR_english_2classes/Xception-006-0.980.hdf5'),
               'input_shape': (299, 299, 3), 'model_weight': 1}
     dicts_models.append(dict1)
 
-    dict1 = {'model_file': os.path.join(model_dir, 'DR_english_2classes/Xception-006-0.980.hdf5'),
-              'input_shape': (299, 299, 3), 'model_weight': 1}
+#Gradable
+if reference_class == '11':
+    dict1 = {'model_file': os.path.join(DIR_MODELS, 'Gradable/MobileNetV2-005-0.946.hdf5'),
+              'input_shape': (224, 224, 3), 'model_weight': 1}
+    dicts_models.append(dict1)
+    dict1 = {'model_file': os.path.join(DIR_MODELS, 'Gradable/NasnetMobile-006-0.945.hdf5'),
+             'input_shape': (224, 224, 3), 'model_weight': 1}
+    dicts_models.append(dict1)
+
+#left right eye
+if reference_class == '12':
+    dict1 = {'model_file': os.path.join(DIR_MODELS, 'LeftRight/MobileNetV2-005-0.997.hdf5'),
+              'input_shape': (224, 224, 3), 'model_weight': 1}
+    dicts_models.append(dict1)
+    dict1 = {'model_file': os.path.join(DIR_MODELS, 'LeftRight/NasnetMobile-007-0.991.hdf5'),
+              'input_shape': (224, 224, 3), 'model_weight': 1,}
     dicts_models.append(dict1)
 
 #endregion

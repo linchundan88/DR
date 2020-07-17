@@ -18,7 +18,6 @@ my_preprocess: the main entrance of fundus images preprocess
 import cv2
 import numpy as np
 import os
-from imgaug import augmenters as iaa
 
 
 DEL_PADDING_RATIO = 0.15  #used for del_black_or_white

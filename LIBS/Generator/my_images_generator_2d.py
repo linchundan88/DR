@@ -1,10 +1,8 @@
 import cv2
 import numpy as np
 import collections
-
 from tensorflow.keras.utils import to_categorical
 import math
-
 from LIBS.ImgPreprocess.my_image_norm import input_norm
 
 

@@ -9,17 +9,17 @@ import sys
 sys.path.append(os.path.abspath('./'))
 sys.path.append(os.path.abspath('../'))
 import numpy as np
-from LIBS.ImgPreprocess.my_preprocess import do_preprocess
-from LIBS.Generator.my_images_generator_2d import my_gen_img_tensor
 
 #command parameters: gpu_no  port no
 #one server provides service for different types
-if len(sys.argv) != 3:  # sys.argv[0]  exe file itself
+if len(sys.argv) != 4:  # sys.argv[0]  exe file itself
     gpu_no = '0'
     port = 5100
+    reference_class = '1'  # DR
 else:
-    gpu_no = str(sys.argv[1])
-    port = int(sys.argv[2])
+    reference_class = str(sys.argv[1])  # DR
+    gpu_no = str(sys.argv[2])
+    port = int(sys.argv[3])
 
 os.environ["CUDA_VISIBLE_DEVICES"] = gpu_no
 
@@ -30,24 +30,27 @@ os.environ["CUDA_VISIBLE_DEVICES"] = gpu_no
 # from keras.backend.tensorflow_backend import set_session
 # set_session(tf.Session(helper=helper))
 
+from LIBS.ImgPreprocess.my_preprocess import do_preprocess
+from LIBS.Generator.my_images_generator_2d import my_gen_img_tensor
 from xmlrpc.server import SimpleXMLRPCServer
 from LIBS.Neural_Networks.Heatmaps.deepshap.my_helper_deepshap import My_deepshap
 
-reference_file = os.path.join(os.path.abspath('.'), 'reference.npy')
+reference_file = os.path.join(os.path.abspath('.'), 'ref_dr.npy')
 num_reference = 24  # background  24
 
 import my_config
-dir_tmp = os.path.join(my_config.dir_tmp, 'deep_shap')
+DIR_TMP = os.path.join(my_config.dir_tmp, 'deep_shap')
+DIR_MODELS = my_config.dir_deploy_models
 
-model_dir = my_config.dir_deploy_models
-dicts_models = []
-#xception batch_size:6, inception-v3 batch_size:24, InceptionResnetV2 batch_size:12
-# dict1 = {'model_file': os.path.join(model_dir, 'DR_english_2classes/InceptionResnetV2-006-0.980.hdf5'),
-#          'input_shape': (299, 299, 3), 'batch_size': 8}
-# dicts_models.append(dict1)
-dict1 = {'model_file': os.path.join(model_dir, 'DR_english_2classes/Xception-006-0.980.hdf5'),
-         'input_shape': (299, 299, 3), 'batch_size': 6}
-dicts_models.append(dict1)
+if reference_class == '1':
+    dicts_models = []
+    #xception batch_size:6, inception-v3 batch_size:24, InceptionResnetV2 batch_size:12
+    dict1 = {'model_file': os.path.join(DIR_MODELS, 'DR_english_2classes/InceptionResnetV2-006-0.980.hdf5'),
+             'input_shape': (299, 299, 3), 'batch_size': 8}
+    dicts_models.append(dict1)
+    dict1 = {'model_file': os.path.join(DIR_MODELS, 'DR_english_2classes/Xception-006-0.980.hdf5'),
+             'input_shape': (299, 299, 3), 'batch_size': 6}
+    dicts_models.append(dict1)
 
 my_deepshap = My_deepshap(dicts_models, reference_file=reference_file, num_reference=num_reference)
 
@@ -62,7 +65,7 @@ def server_shap_deep_explainer(model_no, img_source,
         model_no=model_no, num_reference=num_reference,
         img_input=img_input, ranked_outputs=ranked_outputs,
         blend_original_image=blend_original_image, norm_reverse=True,
-        base_dir_save=dir_tmp)
+        base_dir_save=DIR_TMP)
 
     return list_classes, list_images
 
